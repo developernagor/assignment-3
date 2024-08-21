@@ -1,62 +1,116 @@
-    <!DOCTYPE html>
-    <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignment 3</title>
-        <!-- Google Fonts link -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+            <!DOCTYPE html>
+            <html lang="en" data-theme="light">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Assignment 3</title>
+                <!-- Google Fonts link -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-        <!-- Font Awesome link -->
-        <script src="https://kit.fontawesome.com/c0cf789da4.js" crossorigin="anonymous"></script>
+                <!-- Font Awesome link -->
+                <script src="https://kit.fontawesome.com/c0cf789da4.js" crossorigin="anonymous"></script>
 
-        <!-- Tailwind CSS and Daisyui link -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
+                <!-- Tailwind CSS and Daisyui link -->
+                <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+                <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Tailwind CSS Configuration -->
-        <script>
-            tailwind.config = {
-            theme: {
-                extend: {
-                colors: {
-                    clifford: '#da373d',
-                }
-                }
-            }
-            }
-        </script>
+                <!-- Tailwind CSS Configuration -->
+                <script>
+                    tailwind.config = {
+                    theme: {
+                        extend: {
+                        colors: {
+                            body_bg: '#F4F4F4',
+                            primary:'#ABEF5F',
+                            arrow:'#1C1C1C',
+                            heading:'#212121',
+                            paragraph:'#494949',
+                            header_bg:'#E9E9E9',
+                        }
+                        }
+                    }
+                    }
+                </script>
 
-        <style>
-            .manrope{
-                font-family: "Manrope", sans-serif;
-            }
-        </style>
+                <style>
+                    .manrope{
+                        font-family: "Manrope", sans-serif;
+                    }
+                </style>
 
-
-
-
-    </head>
-    <body class="manrope">
-        <!-- Header Section starts here -->
-        <header>
-            <h2>Hey google</h2>
-        </header>
-        <!-- Header Section ends here -->
-
-        <!-- Main Section starts here -->
-        <main>
-
-        </main>
-        <!-- Main Section ends here -->
-
-        <!-- Footer Section starts here -->
-        <footer>
-
-        </footer>
-        <!-- Footer Section ends here -->
+            </head>
+            <body class="manrope container mx-auto bg-body_bg">
+                <!-- Header Section starts here -->
+                <header class="">
+                    <div class="navbar">
         
-    </body>
-    </html>
+        <!-- Navbar logo -->
+        <div class="navbar-start">
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-primary text-arrow p-2 lg:p-3 mr-2 rounded-full"></i>
+            <a class="text-heading font-extrabold text-xl">Rinterio</a>
+        </div>
+
+        <!-- Navbar Menu -->
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+            <li class=""><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>      
+            <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Navbar button -->
+        <div class="navbar-end hidden lg:flex gap-5">
+            <div>
+                <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-full"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping bg-white p-3 rounded-full"></i>
+            </div>
+            <div>
+                <button class="btn bg-primary rounded-full">
+                    <a class="text-black font-extrabold text-xl">Book Consult</a>
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-3 rounded-full"></i>
+                </button>
+            </div> 
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="navbar-end lg:hidden">
+            <div class="dropdown">
+            <div tabindex="0" role="button" class=" lg:hidden">
+                <i class="fa-solid fa-bars bg-white p-2 rounded-full"></i>
+            </div>
+            <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
+                <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>      
+            <li><a>Contact Us</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+                </header>
+                <!-- Header Section ends here -->
+
+                <!-- Main Section starts here -->
+                <main>
+
+                </main>
+                <!-- Main Section ends here -->
+
+                <!-- Footer Section starts here -->
+                <footer>
+
+                </footer>
+                <!-- Footer Section ends here -->
+                
+            </body>
+            </html>
